@@ -135,5 +135,3 @@ document.querySelectorAll('.slider-container').forEach(slider => {
       window.addEventListener('mouseup', stopDragging);
     });
   });
-
-

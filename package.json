@@ -8,6 +8,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "npm run build && gulp serve",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "keywords": [
