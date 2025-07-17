@@ -1,0 +1,52 @@
+.technology {
+    &__title {
+        width: 100%;
+        max-width: 185px;
+        position: relative;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #0165A7;
+        margin: 0 auto;
+        padding-top: 60px;
+        z-index: -1;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            top: 115px;
+            left:0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+
+    &__card {
+        width: 30%;
+        text-align: center;
+
+        h3{
+            font-size: 22px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #0063A4;
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 26px;
+            color: #333;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+}

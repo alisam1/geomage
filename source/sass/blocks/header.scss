@@ -1,0 +1,251 @@
+.header {
+    background-color: #eceeef;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 70px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 15;
+    }
+
+    &__right {
+        width: 60%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__navigation{
+        width: 65%;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__item {
+        list-style-type: none;
+        a {
+            font-size: 16px;
+            line-height: 20px;
+            color: #595959;
+            text-decoration: none;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .header__submenu {
+                display: block;
+                background-color: #fff;
+                box-shadow: 1px 1px 0 0 rgba(255,255,255,.1);
+                position: absolute;
+                top: 70px;
+                padding: 20px;
+
+                li {
+                    list-style-type: none;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+
+                    a{
+                       font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__submenu {
+        display: none;
+    }
+
+    &__networks {
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+        &--linkedin {
+            margin-right: 10px;
+            img {
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &--youtube {
+            margin-right: 10px;
+            img {
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &--fb {
+            margin-right: 10px;
+            img {
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &--registration {
+            width: 100%;
+            padding: 7px 15px;
+            background-color: #fe6a00;
+            color: #fff;
+            border-radius: 15px;
+        }
+    }
+
+    &__modal {
+        z-index: 10000;
+        width: 100%;
+        max-width: 800px !important;
+        background: url('https://www.geomage.com/wp-content/uploads/2023/05/MicrosoftTeams-image-5-e1613060336988.jpg') no-repeat;
+    }
+
+    &__modal-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__modal-container-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            width: 260px;
+            height: 46px;
+            border: none;
+            background-color: #0077B5;
+            border-radius: 8px;
+
+            a{
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__modal-container-right {
+        width: 50%;
+    }
+}
+
+
+.auth-tabs {
+    width: 320px;
+    margin: 50px auto;
+    font-family: sans-serif;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .tab-btn i {
+    margin-right: 5px;
+  }
+  
+  .tab-btn.active {
+    background: #fe6a00;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .auth-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .auth-form label i {
+    margin-right: 5px;
+    color: #555;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-form button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .auth-form button i {
+    margin-right: 5px;
+  }
+  
+  .auth-form button:hover {
+    background: #218838;
+  }
+  

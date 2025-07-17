@@ -1,0 +1,52 @@
+.case-studies {
+    background-color: #0063A4;
+    padding-bottom: 50px;
+
+    &__title {
+        font-size: 42px;
+        line-height: 48px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 26px;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+
+    &__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        img {
+            width: 18%;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background-color: #FE6A00;
+        border: 1px solid transparent;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 10px;
+
+        &:hover, &:active {
+            background-color: #fff;
+            border: 1px solid #FE6A00;
+            color: #FE6A00;
+        }
+    }
+}

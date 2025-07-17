@@ -1,0 +1,20 @@
+@use "variables.scss";
+@use "blocks/header.scss";
+@use "blocks/software.scss";
+@use "blocks/services.scss";
+@use "blocks/technology.scss";
+@use "blocks/case-studies.scss";
+@use "blocks/slider.scss";
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+}
