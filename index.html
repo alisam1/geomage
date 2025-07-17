@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__left">
+          <div class="header__logo">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/03/cropped-logo-2.png" width="100" alt="Logo">
+          </div>
+        </div>
+        <div class="header__right">
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="">Software</a>
+                <ul class="header__submenu">
+                    <li><a href="">g-Platform™</a></li>
+                    <li><a href="">g-Space™</a></li>
+                    <li><a href="">g-Viewer</a></li>
+                </ul>
+              </li>
+              <li class="header__item"><a href="">Technology</a></li>
+              <li class="header__item">
+                <a href="">Servies</a>
+                <ul class="header__submenu">
+                    <li><a href="">g-Platform™</a></li>
+                    <li><a href="">g-Space™</a></li>
+                    <li><a href="">g-Viewer</a></li>
+                </ul>
+              </li>
+              <li class="header__item"><a href="">Case Studies</a></li>
+              <li class="header__item"><a href="">Download</a></li>
+              <li class="header__item"><a href="">About Us</a></li>
+            </ul>
+          </nav>
+          <div class="header__networks">
+            <a href="https://www.linkedin.com/company/geomage/" target="_blank" class="header__networks--linkedin">
+              <img src="img/networks/linkedin_logo.png" alt="linkedin">
+            </a>
+            <a href="https://www.facebook.com/Geomage/" target="_blank" class="header__networks--fb">
+              <img src="img/networks/facebook_logo.png" alt="fb">
+            </a>
+            <a href="https://www.youtube.com/channel/UCBSA17Lr2RykeBMOutWQWWQ" target="_blank" class="header__networks--youtube">
+              <img src="img/networks/youtube_logo.png" alt="youtube">
+            </a>
+            <a href="#" class="header__networks--registration js-open-modal" data-modal="auth">Login</a>
+            <div class="modal header__modal" data-modal="auth">
+                <!--   Svg иконка для закрытия окна  -->
+              <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+              <div class="header__modal-container">
+                <div class="header__modal-container-left">
+                  <button>
+                    <i class="fa-brands fa-linkedin" style="color: #fff; position:relative; left: -20px"></i><a href="https://www.linkedin.com/company/geomage/">Login with Linkedin</a>
+                  </button>
+                </div> 
+                <div class="header__modal-container-right">
+                  <div class="auth-tabs">
+                    <div class="tab-buttons">
+                      <button class="tab-btn active" data-tab="login">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                      </button>
+                      <button class="tab-btn" data-tab="signup">
+                        <i class="fas fa-user-plus"></i> Sign Up
+                      </button>
+                    </div>
+        
+                    <div class="tab-content active" id="login">
+                      <form class="auth-form">
+                        <h2><i class="fas fa-lock"></i> Login</h2>
+                        <label>
+                          <i class="fas fa-envelope"></i>
+                          Email:
+                          <input type="email" name="email" required="">
+                        </label>
+                        <label>
+                          <i class="fas fa-key"></i>
+                          Password:
+                          <input type="password" name="password" required="">
+                        </label>
+                        <button type="submit"><i class="fas fa-sign-in-alt"></i> Log In</button>
+                      </form>
+                    </div>
+        
+                    <div class="tab-content" id="signup">
+                      <form class="auth-form">
+                        <h2><i class="fas fa-user-plus"></i> Sign Up</h2>
+                        <label>
+                          <i class="fas fa-user"></i>
+                          Name:
+                          <input type="text" name="name" required="">
+                        </label>
+                        <label>
+                          <i class="fas fa-envelope"></i>
+                          Email:
+                          <input type="email" name="email" required="">
+                        </label>
+                        <label>
+                          <i class="fas fa-key"></i>
+                          Password:
+                          <input type="password" name="password" required="">
+                        </label>
+                        <button type="submit"><i class="fas fa-user-check"></i> Sign Up</button>
+                      </form>
+                    </div>
+                  </div>  
+                </div> 
+              </div>
+            </div>
+            <div class="overlay js-overlay-modal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+  <section class="software">
+    <div class="container">
+      <h1 class="software__title">Software</h1>
+      <div class="software__tabs">
+        <div class="software__container-tabs">
+          <div class="tab tab--active">
+            <img src="https://geomage.com/wp-content/uploads/2023/03/Icon_01-e1622008597180-min.png" alt="software_logo_1">
+            <h3>g-Platform™ - seismic data processing software</h3>
+            <p>Geomage g-Platform™ is the most innovative, interactive and advanced software for processing and imaging of seismic data</p>
+          </div>
+          <div class="tab">
+            <img src="https://geomage.com/wp-content/uploads/2023/03/Icon-02-e1622008632648-min.png" alt="software_logo_2">
+            <h3>g-Space™ - geological and geophysical interpretation software</h3>
+            <p>Geomage g-Space™ is a software suite for geological and geophysical interpretation, well correlation and map creation</p>
+          </div>
+          <div class="tab">
+            <img src="https://geomage.com/wp-content/uploads/2023/03/Icon-03-e1622008664844-min.png" alt="software_logo_3">
+            <h3>g-Viewer™ - geophysical data visualization software</h3>
+            <p>GThis is an universal viewer for any type of geophysical data. We are working on adding more formats and features</p>
+          </div>
+        </div>
+             
+        <div class="container--content">
+          <div class="content content--active"> 
+            <div class="content__left">
+              <div class="content__left__description">
+                <h3>Seismic Data Processing Software 2D / 3D</h3>
+                <p>Geomage g-Platform seismic data processing software provides user with many interactive features, creating a unique overall software experience: </p>
+                <ul>
+                  <li>Software Performance – when you click somewhere, something happens</li>
+                  <li>Well-defined basic DB and Project Tree Structure</li>
+                  <li>Easy cluster and jobs management</li>
+                  <li>Full interaction between view windows</li>
+                  <li>Multiple QC displays at all phases of processing</li>
+                </ul>
+              </div>  
+              <div class="button content__left__button">
+                <button class="button__blue">Read more </button>
+                <button class="button__orange">Download Free Trial</button>
+                <button class="button__transparent">Ask a Question</button>
+              </div>
+            </div>
+            <div class="content__right">
+              <img src="https://geomage.com/wp-content/uploads/2023/08/g-Platform_VA_Icon-1__light_600pix.jpg" alt="">
+            </div>
+          </div> 
+          <div class="content">
+            <div class="content__left">
+              <div class="content__left__description">
+                <h3>Structural and Geological Interpretation</h3>
+                <p>Geomage g-Space™ is a complete geological interpretation software that allows thorough analysis of existing seismic and well data. It includes many graphical and interactive features that makes interpreter’s work more enjoyable, efficient and accurate. All that at very cost-effective pricing and world-class support. Geomage g-Space™ software includes:  </p>
+                <ul>
+                  <li>Horizon and Fault picking</li>
+                  <li>Geological modeling</li>
+                  <li>Map creation with faults</li>
+                  <li>Well-tie and dynamic update</li>
+                  <li>Well correlation</li>
+                  <li>Velocity model based on checkshots and horizons</li>
+                  <li>Simultaneous time/depth picking</li>
+                  <li>complete demo project based on Teapot Dome data, provided by RMOTC and the U.S. Department of Energy as the data source</li>
+                </ul>
+              </div>  
+              <div class="button content__left__button" "="">
+                <button class="button__blue">Read more </button>
+                <button class="button__orange">Download Free Trial</button>
+                <button class="button__transparent">Ask a Question</button>
+              </div>
+            </div>
+            <div class="content__right">
+              <img src="https://geomage.com/wp-content/uploads/2023/08/g-Space_3d-visualization_01__light_575pix.jpg" alt="">
+            </div>
+          </div>
+          <div class="content">
+            <div class="content__left">
+              <div class="content__left__description">
+                <h3>Geophysical data visualization software</h3>
+                <p>This software designed to visualize and QC multiple files in different geophysical formats. Current version includes:  </p>
+                <ul>
+                  <li>Load and review Seg-Y files of any size</li>
+                  <li>Load multiple Seg-Y files – 2D and 3D</li>
+                  <li>Selection of active dataset from location map</li>
+                  <li>Graphical representation of trace header(s) above seismogram view</li>
+                  <li>Cross-plot any 3 trace headers (horizontal-vertical-color )</li>
+                  <li>Load of geometry from trace headers</li>
+                  <li>Editing trace header scheme per each dataset</li>
+                  <li>Selection and representation of CS/CR/CMP gathers picked from location map</li>
+                  <li>Selection and representation of active trace from seismogram/location map</li>
+                  <li>Editing text and bin headers</li>
+                  <li>EAnd the AUTO-UPDATE, so you could get new version whenever its available. More features to come soon are Seg-D, Las, Shape, ASCII, SU and other formats </li>
+                </ul>
+              </div>
+              <div class="button button__group">
+                <button class="button__blue">Read more </button>
+                <button class="button__orange">Download Free Trial</button>
+                <button class="button__transparent">Ask a Question</button>
+              </div>
+            </div>
+            <div class="content__right">
+              <img src="https://geomage.com/wp-content/uploads/2023/08/g-Viewer_prestack_qc_01-e1632718120166__light_500pix.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="services__title">Advanced Seismic Processing Services</h2>
+      <div class="services__content">
+        <div href="#" class="services__card js-open-modal" data-modal="1">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Low fold / Old Seismic</h3>
+          <p>Legacy or low fold data can present significant problems in imaging and stratigraphic resolution. Using MultiFocusing a data driven geology based regularization can be applied to improve the spatial sampling of the dataset leading to greatly improved resolution and imaging</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="2">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Sparse 3D / Footprint </h3>
+          <p>Using MultiFocusing data regularization on sparse or irregularly sampled datasets can provide significant uplift in the gather and image quality. As well foot-print evident in conventional datasets can be significantly reduced by careful selection of the regularization method</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="3">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Rough topography</h3>
+          <p>Areas with rough surface topography are often characterized by near surface static issues and imaging problems. Using topographically referenced MultiFocusing the complex wavefields are easily solved allowing for substantial improvement in data quality</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="4">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Complex velocity</h3>
+          <p>Applying MultiFocusing not only gives its significant improvement in image quality, but analysis of the derived wavefield model gives accurate estimates of the true velocity model based on the geology and leading to a better imaged migration</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="5">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Refraction statics </h3>
+          <p>Complex geologic environments typically include complexity in the near surface. The near surface static solution provided by Geomage refraction statics is highly responsive to this near surface complexity, giving a clearer image of the subsurface</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="6">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Marine data </h3>
+          <p>MultiFocusing imaging brings into marine seismic processing wider frequency content, better resolution of stratigraphy and higher signal to noise ratio</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="7">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Fault/Fracture detection</h3>
+          <p>Finding fractures and its orientation can be a game changer in some projects. Geomage Diffraction Imaging exploits the diffraction energy inside the seismic data to generate enhanced diffraction volumes which can highlight fractured zones and fracture orientations within the target areas</p>
+        </div>
+        <div href="#" class="services__card js-open-modal" data-modal="8">
+          <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+          <h3>Time/Depth imaging</h3>
+          <p>In time or depth domain, high resolution prestack migration gives the best image especially when used in conjuction with MultiFocusing enhanced and regularized gathers and accurately estimation dip-corrected MF-RMS velocity</p>
+        </div>
+
+        <div class="modal" data-modal="1">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://avatars.dzeninfra.ru/get-zen_doc/10165010/pub_64ae5b42620a9a15a71b2b1a_64ae5fdfc33bb05ecc5d45c3/scale_1200" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="modal" data-modal="2">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="modal" data-modal="3">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+                 
+        <div class="modal" data-modal="4">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="modal" data-modal="5">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="modal" data-modal="6">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="modal" data-modal="7">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="modal" data-modal="8">
+          <!--   Svg иконка для закрытия окна  -->
+          <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"></path></svg>
+          <div class="slider-container">
+            <img src="https://www.geomage.com/wp-content/uploads/2023/05/line01_01_brute_stack.jpg" class="img before" alt="Before">
+            <div class="after-wrapper">
+              <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" class="img after" alt="After">
+            </div>
+            <div class="slider-handle"></div>
+          </div>
+        </div>
+
+        <div class="overlay js-overlay-modal"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="technology">
+    <div class="container">
+      <h2 class="technology__title">Technology</h2>
+      <div class="technology__content">
+        <div class="technology__card">
+          <img src="https://www.geomage.com/wp-content/uploads/elementor/thumbs/17-after__light-qy4xajaqz0hoy03d91rf3a02g8r4ukycqsbiq1yipw.jpg" alt="">
+          <h3>MultiFocusing Imaging</h3>
+          <p>Geomage’s highly effective Common Offset MultiFocusing (COMF) technology enhances existing zero-offset approximation solution (ZOMF or CRS stack / CRS seismic processing ) by more accurate description of time arrival and allows a complete preservation of amplitude, non-hyperbolic and azimuthal information.</p>
+        </div>
+        <div class="technology__card">
+          <img src="https://www.geomage.com/wp-content/uploads/elementor/thumbs/17-after__light-qy4xajaqz0hoy03d91rf3a02g8r4ukycqsbiq1yipw.jpg" alt="">
+          <h3>Azimuthal Refraction Statics</h3>
+          <p>Complex geologic environments typically include complexity in the near surface. The near surface static solution provided by proprietary azimuthal refraction residual statics is highly responsive to this near surface complexity, giving a clearer image of the subsurface.</p>
+        </div>
+        <div class="technology__card">
+          <img src="https://www.geomage.com/wp-content/uploads/elementor/thumbs/17-after__light-qy4xajaqz0hoy03d91rf3a02g8r4ukycqsbiq1yipw.jpg" alt="">
+          <h3>Diffraction Imaging</h3>
+          <p>The MultiFocusing Diffraction Imaging (MFDI) method is based on a new moveout time correction which adequately describes diffraction events. Optimal summation of the diffracted events and attenuation of the specular reflections allow creating an image containing mostly diffraction energy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-studies">
+    <div class="container">
+      <h2 class="case-studies__title">Case Studies</h2>
+      <p class="case-studies__description">Case studies of MultiFocusing seismic data processing technology which was successfully deployed in different geological settings all around the globe. We have chosen set of different examples done with Geomage MultiFocusing seismic processing technology and compare it with standard time processing seismic data imaging.</p>
+      <div class="case-studies__images">
+        <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+        <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+        <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+        <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+        <img src="https://www.geomage.com/wp-content/uploads/2023/04/line01_02_statics_stack-min.jpg" alt="">
+      </div>
+      <button class="case-studies__button">View All Countries</button>
+    </div>
+  </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
