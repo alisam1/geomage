@@ -78,10 +78,9 @@
         
                     <div class="tab-content active" id="login">
                       <form class="auth-form">
-                        <h2><i class="fas fa-lock"></i> Login</h2>
                         <label>
                           <i class="fas fa-envelope"></i>
-                          Email:
+                          Username/Email:
                           <input type="email" name="email" required="">
                         </label>
                         <label>
@@ -89,29 +88,40 @@
                           Password:
                           <input type="password" name="password" required="">
                         </label>
-                        <button type="submit"><i class="fas fa-sign-in-alt"></i> Log In</button>
+                        <button type="submit">Log In</button>
                       </form>
                     </div>
         
                     <div class="tab-content" id="signup">
                       <form class="auth-form">
-                        <h2><i class="fas fa-user-plus"></i> Sign Up</h2>
-                        <label>
-                          <i class="fas fa-user"></i>
-                          Name:
-                          <input type="text" name="name" required="">
-                        </label>
                         <label>
                           <i class="fas fa-envelope"></i>
-                          Email:
-                          <input type="email" name="email" required="">
+                          Email
+                          <input type="text" name="name" required="">
                         </label>
+                        <div class="user__name">
+                          <label>
+                            <i class="fas fa-user"></i>
+                            First Name
+                            <input type="email" name="email" required="">
+                          </label>
+                          <label>
+                            <i class="fas fa-user"></i>
+                            Last Name
+                            <input type="email" name="email" required="">
+                          </label>
+                        </div>
                         <label>
                           <i class="fas fa-key"></i>
                           Password:
                           <input type="password" name="password" required="">
                         </label>
-                        <button type="submit"><i class="fas fa-user-check"></i> Sign Up</button>
+                        <label>
+                          <i class="fas fa-key"></i>
+                          Confirm Password:
+                          <input type="password" name="password" required="">
+                        </label>
+                        <button type="submit">Sign Up</button>
                       </form>
                     </div>
                   </div>  

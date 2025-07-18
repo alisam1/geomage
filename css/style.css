@@ -255,6 +255,7 @@
   display: block;
   margin-bottom: 10px;
   font-size: 14px;
+  text-align: left;
 }
 
 .auth-form label i {
@@ -276,7 +277,7 @@
 .auth-form button {
   width: 100%;
   padding: 10px;
-  background: #28a745;
+  background: #fe6a00;
   color: white;
   border: none;
   font-size: 16px;
@@ -292,6 +293,23 @@
 
 .auth-form button:hover {
   background: #218838;
+}
+
+.user__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.user__name label {
+  width: 45%;
+  text-align: left;
 }
 
 .software {
