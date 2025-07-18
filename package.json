@@ -7,9 +7,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npm run build && gulp serve",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "npm run build && gulp serve"
   },
   "keywords": [
     "Geomage"
