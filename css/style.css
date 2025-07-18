@@ -108,6 +108,10 @@
   width: 30px;
   height: 30px;
 }
+.header__networks--linkedin img:hover, .header__networks--linkedin img:active {
+  -webkit-box-shadow: 0 0 3px #0077B5;
+          box-shadow: 0 0 3px #0077B5;
+}
 .header__networks--youtube {
   margin-right: 10px;
 }
@@ -115,6 +119,10 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
+}
+.header__networks--youtube img:hover {
+  -webkit-box-shadow: 0 0 3px #c4302b;
+          box-shadow: 0 0 3px #c4302b;
 }
 .header__networks--fb {
   margin-right: 10px;
@@ -124,12 +132,22 @@
   width: 30px;
   height: 30px;
 }
+.header__networks--fb img:hover {
+  -webkit-box-shadow: 0 0 3px #1778F2;
+          box-shadow: 0 0 3px #1778F2;
+}
 .header__networks--registration {
   width: 100%;
   padding: 7px 15px;
   background-color: #fe6a00;
   color: #fff;
+  border: 1px solid transparent;
   border-radius: 15px;
+}
+.header__networks--registration:hover, .header__networks--registration:active {
+  background-color: #fff;
+  border: 1px solid #fe6a00;
+  color: #fe6a00;
 }
 .header__modal {
   z-index: 10000;
