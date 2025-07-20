@@ -135,3 +135,8 @@ document.querySelectorAll('.slider-container').forEach(slider => {
       window.addEventListener('mouseup', stopDragging);
     });
   });
+
+  $(function(){
+    $("#container1, #container2, #container3, #container4, #container5, #container6, #container7, #container8").twentytwenty();
+    console.log(123)
+  });
