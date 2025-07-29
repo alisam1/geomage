@@ -431,6 +431,11 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media (max-width: 992px) {
+  .software__container-tabs {
+    display: none;
+  }
+}
 .software__container-tabs > .tab {
   cursor: pointer;
   position: relative;
@@ -503,9 +508,54 @@
   padding-right: 0;
   background-color: #fff;
 }
+@media (max-width: 992px) {
+  .content {
+    display: block;
+    padding: 0;
+  }
+}
+.content__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .content__body {
+    display: none;
+    padding: 1.5em 0;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.4s ease;
+    transition: max-height 0.4s ease;
+  }
+}
+.content.open .content__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
 .content__right {
   width: 45%;
   margin-top: 35px;
+}
+@media (max-width: 992px) {
+  .content__right {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .content__right img {
+    width: 100%;
+  }
 }
 .content__left {
   width: 45%;
@@ -520,11 +570,23 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .content__left {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
 .content__left h3 {
   color: #0165a7;
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 30px;
+}
+@media (max-width: 992px) {
+  .content__left h3 {
+    font-size: 26px;
+  }
 }
 .content__left p {
   font-size: 15px;
@@ -542,17 +604,21 @@
 }
 .content__left ul li::before {
   position: absolute;
-  content: "\f061"; /* Юникод fa-arrow-right */
+  content: "\f061";
   font-family: "Font Awesome 6 Free";
-  left: 0;
-  color: #fe6a00;
   left: -20px;
+  color: #fe6a00;
 }
 .content__left .button {
   margin-top: 30px;
 }
 .content__left .button button {
   cursor: pointer;
+}
+@media (max-width: 992px) {
+  .content__left .button button {
+    margin-bottom: 10px;
+  }
 }
 .content__left .button__blue {
   font-size: 16px;
@@ -592,6 +658,52 @@
   border: 1px solid #333;
 }
 
+.tab__mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  .tab__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #FE6A00;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .tab__mobile h3 {
+    font-size: 20px;
+    color: #fff;
+    margin: 5px 0;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .tab__mobile p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+  }
+  .tab__mobile img {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 .content--active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,6 +715,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .content--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .services {
@@ -630,6 +753,14 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 992px) {
+  .services__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .services__card {
   width: 23%;
   display: -webkit-box;
@@ -641,6 +772,14 @@
           flex-direction: column;
   margin-bottom: 80px;
   cursor: pointer;
+}
+@media (max-width: 992px) {
+  .services__card {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 .services__card h3 {
   font-size: 20px;
@@ -659,6 +798,12 @@
 .services__card img {
   width: 310px;
   height: 185px;
+}
+@media (max-width: 992px) {
+  .services__card img {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .twentytwenty-container img {
@@ -751,9 +896,27 @@
           justify-content: space-between;
   margin-top: 70px;
 }
+@media (max-width: 992px) {
+  .technology__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .technology__card {
   width: 30%;
   text-align: center;
+}
+@media (max-width: 992px) {
+  .technology__card {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 .technology__card h3 {
   font-size: 22px;
@@ -788,6 +951,14 @@
   color: #fff;
   padding-bottom: 30px;
 }
+@media (max-width: 992px) {
+  .case-studies__description {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
 .case-studies__images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,8 +972,24 @@
           justify-content: space-between;
   margin-bottom: 40px;
 }
+@media (max-width: 992px) {
+  .case-studies__images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .case-studies__images img {
   width: 18%;
+}
+@media (max-width: 992px) {
+  .case-studies__images img {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 .case-studies__button {
   display: -webkit-box;

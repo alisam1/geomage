@@ -50,6 +50,31 @@ for (let i = 0; i < tabs.length; i++) {
   });
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tabToggles = document.querySelectorAll(".tab__mobile");
+
+  tabToggles.forEach((tab) => {
+    tab.addEventListener("click", function () {
+      // Только если ширина экрана <= 992px
+      if (window.innerWidth <= 992) {
+        const content = this.closest(".content");
+        const body = content.querySelector(".content__body");
+
+        // Переключение класса раскрытия
+        content.classList.toggle("open");
+
+        // Плавная анимация открытия
+        if (content.classList.contains("open")) {
+          body.style.maxHeight = body.scrollHeight + "px";
+        } else {
+          body.style.maxHeight = null;
+        }
+      }
+    });
+  });
+});
+
+
 /* Modal */
 
     var modalButtons = document.querySelectorAll('.js-open-modal'),
